@@ -25,13 +25,11 @@ function draw() {
   background(0);
 
   noCursor();
-  // display ufo
   image(lumio, mouseX-width/2, mouseY- height/2);
 
   // directionalLight(100,0,140,0.4,0,-200,0);
     pointLight(0, 0, 250, mouseX-300, mouseY-300, 0);
     frameRate(55);
-
 
     for (let i = 0; i < mirrors.length; i++) {
       mirrors[i].show();
@@ -39,8 +37,6 @@ function draw() {
     }
 
 }
-
-
 
 
 class Mirror {
